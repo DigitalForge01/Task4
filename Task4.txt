@@ -1,0 +1,63 @@
+Block a Port (e.g., Port 23) via GUI
+
+
+
+Open the Firewall Management Console
+
+Press Win + R, type firewall.cpl, and press Enter to open the Windows Firewall settings.
+
+Click Advanced settings on the left to open Windows Defender Firewall with Advanced Security.
+
+Go to Inbound Rules
+
+In the left-hand pane, click Inbound Rules.
+
+Create a New Rule
+
+In the right-hand Actions pane, click New Rule....
+
+Choose Rule Type
+
+In the wizard, select Port and click Next.
+
+Specify Protocol and Port
+
+Select TCP (or UDP), enter the specific port number, e.g., 23, in the “Specific local ports” field.
+
+Click Next.
+
+Set an Action
+
+Choose Block the connection, then click Next.
+
+Select Profiles
+
+Select which network profiles to apply the rule to: Domain, Private, and/or Public.
+
+Click Next.
+
+Name the Rule
+
+Give it a meaningful name like Block Telnet (Port 23). Optionally add a description.
+
+Click Finish to create the rule.
+
+
+
+Remove or Disable a Rule
+Open Windows Defender Firewall with Advanced Security (firewall.cpl → Advanced settings).
+
+Select Inbound Rules in the left pane.
+
+Locate the rule by name (e.g., Block Telnet (Port 23)).
+
+Right-click on it:
+
+Choose Disable Rule to temporarily stop its effect, or
+
+Choose Delete to permanently remove it.
+
+
+
+Summary
+Firewalls act like gatekeepers—examining, evaluating, and enforcing rules on network traffic. Depending on their sophistication, they can filter based solely on packet headers, maintain session context, or even analyze packet content deep into the application layer. Whether in consumer systems like Windows Defender Firewall or enterprise-grade next-gen firewalls, the end goal is the same: allowing legitimate traffic while blocking threats.
